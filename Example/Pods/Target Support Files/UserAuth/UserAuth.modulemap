@@ -1,0 +1,6 @@
+framework module UserAuth {
+  umbrella header "UserAuth-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "UserAuth",
+  "version": "0.1.0",
+  "summary": "A short description of UserAuth.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/james/UserAuth",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "james": "aigupengling@163.com"
+  },
+  "source": {
+    "git": "https://github.com/james/UserAuth.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "UserAuth/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
+}

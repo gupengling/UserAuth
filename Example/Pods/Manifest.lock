@@ -1,0 +1,23 @@
+PODS:
+  - SnapKit (5.0.1)
+  - UserAuth (0.1.0):
+    - SnapKit
+
+DEPENDENCIES:
+  - UserAuth (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  UserAuth:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  UserAuth: e464cfbc27bcdf7af8240ff7421f6e0b42abcf0b
+
+PODFILE CHECKSUM: 8fa10e2687c8593d196a2249339a5dcb07a0b9d8
+
+COCOAPODS: 1.9.2
