@@ -1,0 +1,50 @@
+{
+  "name": "Mars",
+  "version": "0.1.0",
+  "summary": "XHB Mars Moudle.",
+  "homepage": "https://github.com/civelxu/Mars",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "civelxu": "xuxiwen785@163.com"
+  },
+  "source": {
+    "git": "https://github.com/civelxu/Mars.git",
+    "tag": "0.1.0"
+  },
+  "static_framework": true,
+  "platforms": {
+    "ios": "9.0"
+  },
+  "frameworks": "Foundation",
+  "ios": {
+    "libraries": [
+      "sqlite3",
+      "iconv",
+      "resolv",
+      "icucore",
+      "stdc++",
+      "z"
+    ],
+    "vendored_frameworks": "Mars/j2objc/**/*.framework"
+  },
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": [
+      "\"$(PODS_ROOT)/../submodules/Mars/Mars/j2objc/JRE.framework/Headers\"",
+      "\"$(PODS_ROOT)/../submodules/Mars/Mars/j2objc/JSR305.framework/Headers\""
+    ]
+  },
+  "source_files": [
+    "Mars/mars/**/*",
+    "Mars/mars/*",
+    "Mars/mars/**/**/*"
+  ],
+  "exclude_files": "Mars/mars/**/*Info.plist",
+  "public_header_files": [
+    "Mars/mars/Mars.h",
+    "Mars/mars/**/*.h",
+    "Mars/mars/**/**/*.h"
+  ]
+}

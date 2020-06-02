@@ -1,27 +1,41 @@
 {
   "name": "UserAuth",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "summary": "A short description of UserAuth.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "Finally, don't worry about the indent, CocoaPods strips it!\nFinally, don't worry about the indent, CocoaPods strips it!",
   "homepage": "https://github.com/james/UserAuth",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "license": "MIT",
   "authors": {
     "james": "aigupengling@163.com"
   },
   "source": {
     "git": "https://github.com/james/UserAuth.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
-  "platforms": {
-    "ios": "10.0"
-  },
-  "source_files": "UserAuth/Classes/**/*",
+  "static_framework": true,
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
   "dependencies": {
     "SnapKit": [
 
+    ],
+    "Mars": [
+
     ]
+  },
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": [
+      "\"$(PODS_ROOT)/../submodules/Mars/Mars/j2objc/JRE.framework/Headers\"",
+      "\"$(PODS_ROOT)/../submodules/Mars/Mars/j2objc/JSR305.framework/Headers\""
+    ]
+  },
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
   }
 }

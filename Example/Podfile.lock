@@ -1,9 +1,12 @@
 PODS:
-  - SnapKit (5.0.1)
-  - UserAuth (0.1.0):
+  - Mars (0.1.0)
+  - SnapKit (4.2.0)
+  - UserAuth (0.0.1):
+    - Mars
     - SnapKit
 
 DEPENDENCIES:
+  - Mars (from `submodules/Mars`)
   - UserAuth (from `../`)
 
 SPEC REPOS:
@@ -11,13 +14,16 @@ SPEC REPOS:
     - SnapKit
 
 EXTERNAL SOURCES:
+  Mars:
+    :path: submodules/Mars
   UserAuth:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  UserAuth: e464cfbc27bcdf7af8240ff7421f6e0b42abcf0b
+  Mars: 1113fbfec532d423190ac84abdf911b0b36f9070
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  UserAuth: 3f38536cc360fccf2fe9354f83fdb189e7b8d18e
 
-PODFILE CHECKSUM: 8fa10e2687c8593d196a2249339a5dcb07a0b9d8
+PODFILE CHECKSUM: be0d0cf4e5f3fe1236b76b149846869ffe8c3884
 
 COCOAPODS: 1.9.2

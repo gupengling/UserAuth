@@ -1,0 +1,13 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Mars" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit" "${PODS_CONFIGURATION_BUILD_DIR}/UserAuth" "${PODS_ROOT}/../submodules/Mars/Mars/j2objc"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Mars/Mars.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/UserAuth/UserAuth.framework/Headers" "$(PODS_ROOT)/../submodules/Mars/Mars/j2objc/JRE.framework/Headers" "$(PODS_ROOT)/../submodules/Mars/Mars/j2objc/JSR305.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Mars/Mars.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/UserAuth/UserAuth.framework/Headers" -iframework "${PODS_ROOT}/../submodules/Mars/Mars/j2objc" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Mars" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/UserAuth"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"iconv" -l"icucore" -l"resolv" -l"sqlite3" -l"stdc++" -l"z" -framework "Foundation" -framework "JRE" -framework "JSR305" -framework "Mars" -framework "SnapKit" -framework "UserAuth"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

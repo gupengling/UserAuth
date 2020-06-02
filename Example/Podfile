@@ -1,14 +1,18 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitlab.xiaoheiban.cn/iOS/SpecsSwift4.git'
+source 'git@github.com/CocoaPods/Specs.git'
+#source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
 
+platform :ios, '9.0'
 use_frameworks!
-platform :ios, '10.0'
+use_modular_headers!
+inhibit_all_warnings!
 
-target 'UserAuth_Example' do
-  pod 'UserAuth', :path => '../'
+def def_pods
+    pod 'UserAuth', :path => '../'
+    pod 'Mars', :path => 'submodules/Mars'
+end
 
-  target 'UserAuth_Tests' do
-    inherit! :search_paths
-
-    
-  end
+target 'Example' do
+    def_pods
 end
